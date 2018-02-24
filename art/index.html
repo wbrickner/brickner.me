@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Will Brickner | Art</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/styles/global.css" />
+	</head>
+	<body>
+		<div class="menu">
+			<a class="noul" href="/"><h1>Will Brickner | Art</h1></a>
+		</div>
+		<div class="content">
+			<table>
+				<tbody>
+					<tr>
+						<td style="font-size: 2vw !important;">
+							These videos are a mix of visualizations of the behavior of <i>iterative complex functions</i>, <i>chaotic systems (n-body simulations)</i>, <i>recursion</i>, and simple <i>parametric functions</i>.
+							<br/><br/>
+							All of these videos were made using <b>Videra</b>, a specialized rendering engine I created.
+							<br/><br/>
+							Many of these videos contain <b>modified</b> audio from <a href="https://soundcloud.com/">Soundcloud</a>.  Below each video you can find a link to the original (unaltered) audio.
+							<br/><br/>
+							More can be found on my instagram: <a href="https://www.instagram.com/computer.graphics/">@computer.graphics</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/0f07491e372d281fb6bef5d392292c9b/5A943520/t50.2886-16/25516552_321924401626393_5150681577734275072_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+					<tr>
+						<td class="small">
+							[Music is <a href="https://soundcloud.com/ben-murray-smith/airborn">'Airborne' by Ben Murray-Smith on SoundCloud</a>]
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/b5fb85261c51a55ee388a006b4118607/5A93FD49/t50.2886-16/25030988_1492119014170738_3374376571186970624_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+					<tr>
+						<td class="small">
+							[Music is (an altered version of) <a href="https://soundcloud.com/ben-murray-smith/the-old-wise-woman">'The Old Wise Woman' by Ben Murray-Smith on SoundCloud</a>]
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/7f903c562012878a12a51385fb3f61b0/5A9420E2/t50.2886-16/25405273_1316596561820054_4319722087334805504_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/fab878a2e38c0c89388258749aee13b1/5A942A70/t50.2886-16/25028280_904666523029632_8976881308231794688_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/7846ee019694679c72f373dab7b074c2/5A9453E6/t50.2886-16/25469649_1391251490985705_8454379089061478400_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/a16ab46cf786db6999f52c19afab16f3/5A93FA36/t50.2886-16/25512995_166291633983314_3688453574021642694_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<video src="https://scontent-ort2-1.cdninstagram.com/vp/e93175534a64a919e26b78287463bbbf/5A949DC8/t50.2886-16/26878998_1405475322911483_2622487175303790592_n.mp4" controls="true" loop="true"></video>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<script>
+			var videos = document.getElementsByTagName("video");    
+			
+			window.globalOnPlay = function(event) {
+				var target = event.target;
+				for (var j = 0, jlen = videos.length; j < jlen; ++j) {
+					if (videos[j] == target) { continue }
+					
+					videos[j].pause();
+				}
+			}
+			
+			for (var j = 0, jlen = videos.length; j < jlen; ++j) {
+				videos[j].onplay = window.globalOnPlay;
+			}
+		</script>
+	</body>
+</html>

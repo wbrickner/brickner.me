@@ -1,0 +1,77 @@
+* {
+	font-family: monospace;
+	color: #fff;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	
+	background-color: #350f35;
+}
+
+h1 {
+	color: #fff;
+	margin: 0px;
+	font-size: 5vw;
+}
+
+.menu {
+	margin: 60px;
+	margin: 9vw;
+	padding: 0px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a.noul:hover {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+}
+
+.list {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 26px;
+	margin-top: 3.9vw;
+}
+
+.list > a > li {
+	list-style: none;
+	color: #fff;
+	margin-top: 10px;
+	margin-top: 1.5vw;
+	margin-bottom: 10px;
+	margin-bottom: 1.5vw;
+	cursor: pointer;
+	font-size: 20px;
+	font-size: 4vw;
+}
+
+.content {
+	margin: 60px;
+	margin: 9vw;
+	color: #fff;
+}
+td {
+	font-size: 20px;
+	font-size: 3vw;
+	padding: 1vw;
+}
+video {
+	width: 100%;
+	max-height: 90vh;
+}
+.small {
+	font-size: 1.5vw;
+}

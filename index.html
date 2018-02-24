@@ -2,86 +2,16 @@
 	<head>
 		<title>Will Brickner</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<style>
-			* {
-				font-family: monospace
-			}
-			
-			html, body {
-				margin: 0px;
-				padding: 0px;
-				width: 100%;
-				
-				background-color: #350f35;
-			}
-			
-			h1 {
-				color: #fff;
-				margin: 0px;
-			}
-			
-			.menu {
-				margin: 60px;
-				padding: 0px;
-			}
-			
-			a {
-				color: #fff;
-				text-decoration: none;
-			}
-			
-			a:hover {
-				text-decoration: underline;
-			}
-			a:active {
-				text-decoration: underline;
-			}
-			
-			.list {
-				display: inline-block;
-				margin: 0px;
-				padding: 0px;
-				margin-top: 26px;
-			}
-			
-			.list > a > li {
-				list-style: none;
-				color: #fff;
-				margin-top: 10px;
-				margin-bottom: 10px;
-				cursor: pointer;
-				font-size: 20px;
-			}
-			
-			img {
-				position: absolute;
-				width: 128px;
-				z-index: 0;
-				user-select: none;
-			}
-			
-			.img-tl {
-				top: 0px;
-				left: 0px;
-			}
-			.img-br {
-				bottom: 0px;
-				right: 0px;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="/styles/global.css" />
 	</head>
 	<body>
 		<div class="menu">
-			<h1>Will Brickner</h1>
+			<a class="noul" href="/"><h1>Will Brickner</h1></a>
 			<ul class="list">
-				<a href="#"><li>Projects</li></a>
-				<a href="#"><li>Art</li></a>
-				<a href="#"><li>Contact</li></a>
+				<a href="/projects/"><li>Projects</li></a>
+				<a href="/art/"><li>Art</li></a>
+				<a href="/contact/"><li>Contact</li></a>
 			</ul>
-			
-			<img class="img-tl" src="bezier-m.png" draggable="false" />
-			<img class="img-br" src="bezier.png" draggable="false" />
 		</div>
 	</body>
 </html>
